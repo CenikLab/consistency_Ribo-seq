@@ -30,4 +30,4 @@ Let's go through the process:
 4. Run `python ribobase_counts_processing.py -i "ribo output form step3" -m "only"`, you can put the script and the result from step3 in the same folder.
 5. Run `correlation_ribo.R` with your CPM result from step4.
 The final plot of the Spearman correlation between HeLa samples is:
-[embed]https://github.com/CenikLab/consistency_Ribo-seq/blob/main/processed/dedup_ribo_HeLa_spearman_cor.pdf[/embed]
+[embed]http://example.com/file.pdf[/embed]
