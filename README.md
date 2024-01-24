@@ -9,13 +9,13 @@ There are 2 main folders in the repo:
 ## Getting started
 ### Files you need
 Original ribo files required to reproduce these results are not included in the repo for size reasons and need to be downloaded. What's required to run this out of the box is:
-- Downloading the directory of ribo files: zenodo link
+- Downloading the directory of ribo files: [zenodo link](https://zenodo.org/uploads/10565283)
 
 Here is a more detailed overview of the files I've worked on in the data directory.
 
 | File | Description | Source | Is Included |
 | --- | ----------- |--| --|
-| `ribo/*` | Directory of ribo files | download from zenodo link | No (But required!) 
+| `ribo/*` | Directory of ribo files | download from [zenodo link](https://zenodo.org/uploads/10565283) | No (But required!) 
 | `HELA_list.csv` | List of 132 HeLa samples | data obtained from GEO | Yes |
 
 ### Dependencies
