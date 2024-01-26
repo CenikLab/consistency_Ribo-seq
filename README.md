@@ -17,7 +17,7 @@ ribo files required to reproduce results need to be downloaded from: [zenodo lin
 ## Workflow
 Let's go through the process: 
 1. Create a new directory to house all the ribo files.
-2. Run `python script/HeLa_extract_count.py --ribinput "input folder of ribo files" --GSMinput "directory for HELA_list.csv" --outdir "you output folder"`; you may also change the directories directly in the script.
+2. Run `python script/HeLa_extract_count.py --ribinput "input folder of ribo files" --GSMinput "directory for HELA_list.csv" --outdir "you output folder"`
 3. Run `python ribobase_counts_processing.py -i "ribo output form step3" -m "only"`, you can put the script and the result from step3 in the same folder.
 4. Run `correlation_ribo.R` with your CPM result from step4.
 The final plot of the Spearman correlation between HeLa samples is:
