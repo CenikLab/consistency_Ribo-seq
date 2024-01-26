@@ -8,14 +8,7 @@ There are 2 main folders in the repo:
 
 ## Getting started
 ### Files you need
-ribo files required to reproduce results can be downloaded from: [zenodo link](https://zenodo.org/uploads/10565283)
-
-Here is a more detailed overview of the files I've worked on in the data directory.
-
-| File | Description | Source | Is Included |
-| --- | ----------- |--| --|
-| `ribo/*` | Directory of ribo files | download from [zenodo link](https://zenodo.org/uploads/10565283) | No (But required!) 
-| `HELA_list.csv` | List of 132 HeLa samples | data obtained from GEO | Yes |
+ribo files required to reproduce results need to be downloaded from: [zenodo link](https://zenodo.org/uploads/10565283)
 
 ### Dependencies
 - Python + libraries (pandas, ribopy,  numpy, bioinfokit)
@@ -25,7 +18,7 @@ Here is a more detailed overview of the files I've worked on in the data directo
 Let's go through the process: 
 1. Create a new directory to house all the ribo files.
 2. Run `python script/HeLa_extract_count.py --ribinput "input folder of ribo files" --GSMinput "directory for HELA_list.csv" --outdir "you output folder"`; you may also change the directories directly in the script.
-4. Run `python ribobase_counts_processing.py -i "ribo output form step3" -m "only"`, you can put the script and the result from step3 in the same folder.
-5. Run `correlation_ribo.R` with your CPM result from step4.
+3. Run `python ribobase_counts_processing.py -i "ribo output form step3" -m "only"`, you can put the script and the result from step3 in the same folder.
+4. Run `correlation_ribo.R` with your CPM result from step4.
 The final plot of the Spearman correlation between HeLa samples is:
 https://github.com/CenikLab/consistency_Ribo-seq/blob/main/processed/dedup_ribo_HeLa_spearman_cor.pdf
