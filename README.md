@@ -1,5 +1,5 @@
 # consistency_Ribo-seq
-This repo details the consistency and reliability of ribosome profiling data through the analysis of 132 HeLa samples across 20 studies.
+This repo details the consistency and reliability of ribosome profiling data through the analysis of 132 HeLa samples across 20 studies. 
 
 ## Overview 
 There are 2 main folders in the repo:
