@@ -13,7 +13,7 @@ There are 2 main folders in the repo:
 ### Files you need
 ribo files (removed duplicated readds based on same position and length) required to reproduce results need to be downloaded from: [zenodo link](https://zenodo.org/uploads/10565283)
 
-### Dependencies (please install before running the scripts)
+### Dependencies (please download before running the scripts)
 - Python + libraries (pandas, ribopy,  numpy, bioinfokit)
 - R + libraries (ggplot2, tidyverse, optparse)
 
