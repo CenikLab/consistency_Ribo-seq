@@ -89,7 +89,7 @@ def ribo_only(GSMinput,ribonput,outdir,status):
     new=pd.DataFrame()
     for k,v in file_dict.items():
         if status == "dedup":
-            data_dir=ribonput+"%s_dedup"%(k)
+            data_dir=ribonput+"/%s_dedup"%(k)
         try:
             os.chdir(data_dir)
         except FileNotFoundError as e:

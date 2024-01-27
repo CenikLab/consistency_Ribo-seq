@@ -2,13 +2,13 @@ if (!require(optparse)) {
   install.packages("optparse")
   library(optparse)
 }
-if (!require(optparse)) {
+if (!require(tidyverse)) {
   install.packages("tidyverse")
-  library(optparse)
+  library(tidyverse)
 }
-if (!require(optparse)) {
+if (!require(ggplot2)) {
   install.packages("ggplot2")
-  library(optparse)
+  library(ggplot2)
 }
 library(ggplot2)
 library(tidyverse)
