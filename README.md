@@ -5,9 +5,9 @@ This repository demonstrates the consistency and reliability of ribosome profili
 There are 2 main folders in the repo:
 - script/ - houses all the codes to run the pipeline and provides information about 132 HeLa samples (HELA_list.csv)
 - processed/ - houses example intermediate file and the final Spearman correlation plot, you can find the following files under this folder:
-  ribo_hela_cpm.csv CPM values for 12045 genes that have CPM > 1 across 70% of samples.
-  ribo_HeLa_Spearman.csv spearman correlation between samples.
-  dedup_ribo_HeLa_spearman_cor.pdf visualization for the result.
+1.ribo_hela_cpm.csv CPM values for 12045 genes that have CPM > 1 across 70% of samples.
+2.ribo_HeLa_Spearman.csv spearman correlation between samples.
+3.dedup_ribo_HeLa_spearman_cor.pdf visualization for the result.
 
 ## Getting started
 ### Files you need
