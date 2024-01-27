@@ -24,4 +24,4 @@ Let's go through the process:
 3. Run `python consistency_Ribo-seq-main/script/HeLa_correlation.py --ribonput "input folder of ribo files" --GSMinput "directory for HELA_list.csv" --outdir "you output folder"`. And you will get ribo_hela_cpm.csv in your output directory.
 4. Run `Rscript consistency_Ribo-seq-main/script/HeLa_plot.R --CPMinput "directory of step3 output" --GSMinput "directory for HELA_list.csv" --outdir "path/to/output"`. And you will get ribo_HeLa_Spearman.csv and dedup_ribo_HeLa_spearman_cor.pdf in your output directory.
 The final plot of the Spearman correlation between HeLa samples is:
-https://github.com/CenikLab/consistency_Ribo-seq/blob/main/processed/dedup_ribo_HeLa_spearman_cor.pdf
+![consistency_Ribo-seq](https://github.com/CenikLab/consistency_Ribo-seq/blob/main/processed/dedup_ribo_HeLa_spearman_cor.jpg "compare")
