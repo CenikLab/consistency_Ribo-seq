@@ -1,5 +1,5 @@
 # consistency_Ribo-seq
-This repository demonstrates the consistency and reliability of ribosome profiling data with an analysis of 132 HeLa samples gathered from 20 distinct studies. Included are 132 aligned HeLa ribosome profiling files (ribo files), facilitating the reproduction of Spearman correlation analyses both within and across these studies. The necessary scripts for these analyses are also provided within this repository.
+This repository demonstrates the consistency and reliability of ribosome profiling data with an analysis of 132 HeLa samples gathered from 20 distinct studies. Included are 132 aligned HeLa ribosome profiling files (ribo files, detailed information about ribo file can be found: https://github.com/ribosomeprofiling/riboflow), facilitating the reproduction of Spearman correlation analyses both within and across these studies. The necessary scripts for these analyses are also provided within this repository.
 
 ## Overview 
 There are 2 main folders in the repo:
@@ -11,7 +11,7 @@ There are 2 main folders in the repo:
 
 ## Getting started
 ### Files you need
-ribo files required to reproduce results need to be downloaded from: [zenodo link](https://zenodo.org/uploads/10565283)
+ribo files (removed duplicated readds based on same position and length) required to reproduce results need to be downloaded from: [zenodo link](https://zenodo.org/uploads/10565283)
 
 ### Dependencies (please install before running the scripts)
 - Python + libraries (pandas, ribopy,  numpy, bioinfokit)
