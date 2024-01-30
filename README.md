@@ -19,7 +19,7 @@ There are two directories in this repository:
 ## Getting started
 
 ### Input files
-ribo files required to reproduce results need to be downloaded from this [Zenodo link](https://zenodo.org/uploads/10565283).
+ribo files required to reproduce results need to be downloaded from this [Zenodo link](https://zenodo.org/records/10565283).
 
 ## Workflow
 Let's walk through the process:
@@ -40,7 +40,7 @@ conda env create -f environment.yaml && conda activate ribo_consistency
 3. Download the required ribo files and create a new directory to house all the ribo files.
 ```
 cd "$WORK_DIR"
-curl https://zenodo.org/uploads/10565283 && cd -
+download ribo files from [Zenodo link](https://zenodo.org/records/10565283)
 ```
 
 4. Run the following:
