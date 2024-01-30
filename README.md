@@ -39,7 +39,8 @@ conda env create -f environment.yaml && conda activate ribo_consistency
 
 3. Download the required ribo files and create a new directory to house all the ribo files.
 ```
-curl https://zenodo.org/uploads/10565283 > "$WORK_DIR"
+cd "$WORK_DIR"
+curl https://zenodo.org/uploads/10565283 && cd -
 ```
 
 4. Run the following:
