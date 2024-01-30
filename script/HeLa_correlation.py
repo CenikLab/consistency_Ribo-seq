@@ -170,7 +170,7 @@ def combine_cutoff_gene(dummy_gene,df):
 def main(args):
     print("#################")
     print("ribo HeLa result")
-    current_parameters(args.ribonput, args.GSMinput, args.outdir)
+    current_parameters(args.riboinput, args.GSMinput, args.outdir)
     ribo_dedup = ribo_only(args.GSMinput, args.ribonput, status="dedup")
     #ribo_dedup.to_csv(args2.outdir+"ribo_only_raw_dedup.csv")
     print("####preprocessing raw data####")
