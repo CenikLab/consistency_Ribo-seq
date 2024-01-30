@@ -6,9 +6,9 @@ To generate the ribo files, duplicated reads based on the same length and start 
 ## Overview 
 There are two directories in this repository:
 
-- script/ - Code to run the pipeline and information about 132 HeLa samples (HELA\_list.csv)
+- script - Code to run the pipeline and information about 132 HeLa samples (HELA\_list.csv)
 
-- processed/ - Example intermediate file and the final Spearman correlation plot. You can find the following files under this folder:
+- processed - Example intermediate file and the final Spearman correlation plot. You can find the following files under this folder:
 
 1. ribo\_hela\_cpm.csv CPM values for 12045 genes that have CPM > 1 across 70% of samples.
 
@@ -19,7 +19,7 @@ There are two directories in this repository:
 ## Getting started
 
 ### Input files
-ribo files required to reproduce results need to be downloaded from this [Zenodo link](https://zenodo.org/uploads/10565283). To generate the ribo files, duplicated reads (based on same aligned start position and length) were removed.
+ribo files required to reproduce results need to be downloaded from this [Zenodo link](https://zenodo.org/uploads/10565283).
 
 ## Workflow
 Let's walk through the process:
@@ -56,4 +56,4 @@ Rscript $PWD/script/HeLa_plot.R --CPMinput "$WORK_DIR" --GSMinput $PWD/script/HE
 You will get ribo\_HeLa\_Spearman.csv and dedup\_ribo\_HeLa\_spearman\_cor.pdf in your output directory.
 
 The final plot of the Spearman correlation between HeLa samples should be:
-![consistency_Ribo-seq](https://github.com/CenikLab/consistency_Ribo-seq/blob/main/processed/dedup_ribo_HeLa_spearman_cor.jpg")
+![consistency_Ribo-seq](https://github.com/CenikLab/consistency_Ribo-seq/blob/main/processed/dedup_ribo_HeLa_spearman_cor.jpg "compare")
