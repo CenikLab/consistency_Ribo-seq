@@ -19,7 +19,7 @@ There are two directories in this repository:
 ## Getting started
 
 ### Input files
-ribo files required to reproduce results need to be downloaded from this [Zenodo link](https://zenodo.org/records/10565283).
+ribo files required to reproduce results need to be downloaded from this [Zenodo link](https://zenodo.org/records/10594392).
 
 ## Workflow
 Let's walk through the process:
@@ -27,7 +27,8 @@ Let's walk through the process:
 1. Download this repository and create a temporary output directory.
 ```
 git clone https://github.com/CenikLab/consistency_Ribo-seq && cd consistency_Ribo-seq
-WORK_DIR="/tmp/consistency_Ribo-seq_test"
+mkdir tmp
+WORK_DIR="$PWD"/tmp
 ```
 
 2. Install [conda](https://docs.conda.io/en/latest/miniconda.html) for required software dependencies.
@@ -40,12 +41,14 @@ conda env create -f environment.yaml && conda activate ribo_consistency
 3. Download the required ribo files and create a new directory to house all the ribo files.
 ```
 cd "$WORK_DIR"
-download ribo files from [Zenodo link](https://zenodo.org/records/10565283)
+wget https://zenodo.org/records/10594392/files/HELA_ribo_files.tar.gz
+tar -zxvf HELA_ribo_files.tar.gz
+cd ../
 ```
 
 4. Run the following:
 ```
-python $PWD/script/HeLa_correlation.py --riboinput "$WORK_DIR" --GSMinput $PWD/script/HELA_list.csv --outdir "$WORK_DIR"
+python $PWD/script/HeLa_correlation.py --riboinput "$WORK_DIR/HELA_ribo_files/" --GSMinput $PWD/script/HELA_list.csv --outdir "$WORK_DIR"
 ```
 You will get ribo\_hela\_cpm.csv in your output directory.
 
