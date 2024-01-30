@@ -171,7 +171,7 @@ def main(args):
     print("#################")
     print("ribo HeLa result")
     current_parameters(args.riboinput, args.GSMinput, args.outdir)
-    ribo_dedup = ribo_only(args.GSMinput, args.ribonput, status="dedup")
+    ribo_dedup = ribo_only(args.GSMinput, args.riboinput, status="dedup")
     #ribo_dedup.to_csv(args2.outdir+"ribo_only_raw_dedup.csv")
     print("####preprocessing raw data####")
     ribo_count_temp, ribo_CPM_temp = data_process(ribo_dedup)
