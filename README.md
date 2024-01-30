@@ -54,7 +54,7 @@ You will get ribo\_hela\_cpm.csv in your output directory.
 
 5. Finally run the following to generate a plot:
 ```
-Rscript $PWD/script/HeLa_plot.R --CPMinput "$WORK_DIR" --GSMinput $PWD/script/HELA_list.csv --outdir "$WORK_DIR"
+Rscript $PWD/script/HeLa_plot.R --CPMinput "$WORK_DIR" --GSMinput $PWD/script/ --outdir "$WORK_DIR"
 ```
 
 You will get ribo\_HeLa\_Spearman.csv and dedup\_ribo\_HeLa\_spearman\_cor.pdf in your output directory.
